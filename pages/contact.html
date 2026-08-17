@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | SIF Academy</title>
+<meta name="description" content="Contactez SIF Academy pour obtenir des informations sur nos formations. Formulaire direct vers WhatsApp, sans base de données ni collecte de vos informations.">
+<link rel="icon" href="../assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="SIF Academy" style="height:42px;width:auto;"></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="../index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="formations.html">Formations</a>
+      <a href="entreprises.html">Entreprises &amp; Institutions</a>
+      <a href="avantages.html">Avantages</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm"><span>S'inscrire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    
+    <h1>Contactez SIF Academy</h1>
+    <p>Une question sur nos formations ? Écrivez-nous, notre équipe vous répond directement sur WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-wrap">
+
+    <!-- Coordonnées -->
+    <div class="reveal">
+      <div class="contact-info-card">
+        <h3>Nos coordonnées</h3>
+        <div class="contact-line">
+          <span class="ico"><i class="fa-brands fa-whatsapp"></i></span>
+          <div><strong>WhatsApp / Téléphone</strong><a href="tel:+22901627818163">+229 01 62 78 18 63</a></div>
+        </div>
+        <div class="contact-line">
+          <span class="ico"><i class="fa-solid fa-phone"></i></span>
+          <div><strong>Téléphone Togo</strong><a href="tel:+22892418316">+228 92 41 83 16</a></div>
+        </div>
+        <div class="contact-line">
+          <span class="ico"><i class="fa-solid fa-envelope"></i></span>
+          <div><strong>E-mail</strong><a href="mailto:contact@sifgroupe.bj">contact@sifgroupe.bj</a></div>
+        </div>
+        <div class="contact-line">
+          <span class="ico"><i class="fa-solid fa-globe"></i></span>
+          <div><strong>Site web</strong><a href="https://www.sifgroupe.bj" target="_blank">www.sifgroupe.bj</a></div>
+        </div>
+        <div class="contact-line">
+          <span class="ico"><i class="fa-solid fa-location-dot"></i></span>
+          <div><strong>Localisation</strong><span>Bénin, Cotonou | Togo, Lomé</span></div>
+        </div>
+
+        <div class="contact-quick">
+          <a href="https://wa.me/2290162781863" target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:+22901627818163" class="btn btn-outline btn-sm"><i class="fa-solid fa-phone"></i> Appeler</a>
+          <a href="mailto:contact@sifgroupe.bj" class="btn btn-outline btn-sm"><i class="fa-solid fa-envelope"></i> E-mail</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="reveal">
+      <div class="form-card">
+        <h3>Envoyer une demande</h3>
+        <p style="margin-bottom:26px;">Remplissez le formulaire ci-dessous : votre message s'ouvrira directement dans WhatsApp, prêt à être envoyé.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="nom">Nom et prénom *</label>
+              <input type="text" id="nom" name="nom" placeholder="Ex : Aïcha Dossou" required>
+            </div>
+            <div class="field">
+              <label for="telephone">Téléphone *</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="Ex : +229 01 00 00 00 00" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Adresse e-mail *</label>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="formation">Formation qui vous intéresse *</label>
+              <select id="formation" name="formation" required>
+                <option value="" disabled selected>Choisir une formation</option>
+                <option value="Finance et Assurance digitale">Finance et Assurance digitale</option>
+                <option value="Agriculture Technologique">Agriculture Technologique</option>
+                <option value="E-Santé &amp; Innovation Médicale">E-Santé &amp; Innovation Médicale</option>
+                <option value="E-Transport &amp; Mobilité Intelligente">E-Transport &amp; Mobilité Intelligente</option>
+                <option value="Programme Entreprises / Institutions">Programme Entreprises / Institutions</option>
+                <option value="Autre / Renseignement général">Autre / Renseignement général</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="type-demande">Type de demande *</label>
+              <select id="type-demande" name="type-demande" required>
+                <option value="" disabled selected>Choisir un type</option>
+                <option value="Inscription">Inscription</option>
+                <option value="Demande d'information">Demande d'information</option>
+                <option value="Offre entreprise / institution">Offre entreprise / institution</option>
+                <option value="Partenariat">Partenariat</option>
+                <option value="Autre">Autre</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Précisez votre demande…"></textarea>
+          </div>
+
+          <div class="checkbox-field">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">J'accepte que mes informations soient utilisées uniquement pour répondre à ma demande.</label>
+          </div>
+
+          <button type="submit" class="btn btn-whatsapp btn-block">
+            <i class="fa-brands fa-whatsapp"></i> Envoyer ma demande sur WhatsApp
+          </button>
+
+          <p id="form-status" class="form-status"></p>
+          <p class="form-note"><i class="fa-solid fa-lock"></i> Aucune donnée n'est enregistrée sur nos serveurs : votre message est envoyé directement via WhatsApp.</p>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/images/logo.png" alt="SIF Academy" style="height:38px;width:auto;">
+        <p class="desc">SIF Academy est un centre de formation professionnelle en économie numérique, branche formation de SIF Groupe.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/sifgroupe" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/sifgroupe/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/2290162781863" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="avantages.html">Avantages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Formations</h4>
+        <ul>
+          <li><a href="formations.html#finance">Finance &amp; Assurance digitale</a></li>
+          <li><a href="formations.html#agriculture">Agriculture Technologique</a></li>
+          <li><a href="formations.html#sante">E-Santé &amp; Innovation Médicale</a></li>
+          <li><a href="formations.html#transport">E-Transport &amp; Mobilité</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+22901627818163"><i class="fa-solid fa-phone"></i> +229 01 62 78 18 63</a></li>
+          <li><a href="tel:+22892418316"><i class="fa-solid fa-phone"></i> +228 92 41 83 16 (Togo)</a></li>
+          <li><a href="mailto:contact@sifgroupe.bj"><i class="fa-solid fa-envelope"></i> contact@sifgroupe.bj</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Bénin, Cotonou | Togo, Lomé</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 SIF Academy — SIF Groupe. Tous droits réservés.</span>
+      <span>www.sifgroupe.bj</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2290162781863" target="_blank" class="wa-float" aria-label="Contacter SIF Academy sur WhatsApp">
+  <i class="fa-brands fa-whatsapp fa-lg"></i>
+</a>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formations | SIF Academy</title>
+<meta name="description" content="Découvrez les 4 formations certifiantes de SIF Academy : Finance et Assurance digitale, Agriculture Technologique, E-Santé, E-Transport. 3 mois, cours du soir, 100% en ligne.">
+<link rel="icon" href="../assets/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<style>
+  .formation-full{
+    display:grid; grid-template-columns:.9fr 1.1fr; gap:0;
+    border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--gray-200);
+    box-shadow:var(--shadow-sm); margin-bottom:40px; scroll-margin-top:110px;
+  }
+  .formation-full-media{ position:relative; min-height:340px; }
+  .formation-full-media img{ width:100%; height:100%; object-fit:cover; position:absolute; inset:0; }
+  .formation-full-body{ padding:44px 40px; background:var(--white); }
+  .formation-full-tag{
+    display:inline-flex; align-items:center; gap:10px; padding:8px 16px 8px 10px;
+    border-radius:100px; color:#fff; font-weight:700; font-size:.82rem; margin-bottom:18px;
+  }
+  .formation-full-tag .ico{ width:28px;height:28px;border-radius:50%; background:rgba(255,255,255,.25); display:flex;align-items:center;justify-content:center; }
+  .outcomes-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; margin:18px 0 26px; }
+  .outcomes-grid li{ font-size:.9rem; color:var(--gray-700); padding:6px 0 6px 22px; position:relative; }
+  .outcomes-grid li::before{ content:"\f00c"; font-family:"Font Awesome 6 Free"; font-weight:900; color:var(--cyan); position:absolute; left:0; }
+  @media (max-width:900px){ .formation-full{ grid-template-columns:1fr; } .formation-full-media{ min-height:220px; } .formation-full-body{ padding:32px 24px;} .outcomes-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="SIF Academy" style="height:42px;width:auto;"></a>
+    <nav class="nav-links" id="nav-links">
+      <a href="../index.html">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="formations.html" class="active">Formations</a>
+      <a href="entreprises.html">Entreprises &amp; Institutions</a>
+      <a href="avantages.html">Avantages</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm"><span>S'inscrire</span> <i class="fa-solid fa-arrow-right"></i></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    
+    <h1>Nos formations professionnelles certifiantes</h1>
+    <p>Quatre filières d'avenir pour renforcer vos compétences numériques et accélérer votre carrière. 3 mois, cours du soir, 100% en ligne.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <article id="finance" class="formation-full reveal">
+      <div class="formation-full-media"><img src="../assets/images/assurance.jpg" alt="Finance et Assurance digitale"></div>
+      <div class="formation-full-body">
+        <span class="formation-full-tag c-finance"><span class="ico"><i class="fa-solid fa-chart-simple"></i></span>Finance et Assurance digitale</span>
+        <h2>Finance et Assurance digitale</h2>
+        <p>Maîtrisez les innovations financières et les outils technologiques qui transforment le secteur bancaire et assurantiel. Vous apprendrez à utiliser les systèmes de paiements numériques, la blockchain, la data financière et la fintech pour piloter la performance.</p>
+        <strong style="color:var(--navy); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em;">Futurs métiers</strong>
+        <ul class="outcomes-grid">
+          <li>Analyste financier digital</li>
+          <li>Spécialiste Fintech</li>
+          <li>Gestionnaire e-banking</li>
+          <li>Consultant / Chef projet finance digitale</li>
+          <li>Formateur</li>
+          <li>Entrepreneur — Fintech et Assurtech</li>
+        </ul>
+        <div class="formation-meta">
+          <span><i class="fa-regular fa-clock"></i> Durée : 3 mois</span>
+          <span><i class="fa-solid fa-moon"></i> Cours du soir</span>
+          <span><i class="fa-solid fa-wifi"></i> 100% en ligne</span>
+        </div>
+        <a href="contact.html?formation=Finance%20et%20Assurance%20digitale" class="btn btn-primary" style="margin-top:26px;">Je suis intéressé(e) <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article id="agriculture" class="formation-full reveal">
+      <div class="formation-full-media"><img src="../assets/images/agriculture.jpg" alt="Agriculture Technologique"></div>
+      <div class="formation-full-body">
+        <span class="formation-full-tag c-agri"><span class="ico"><i class="fa-solid fa-seedling"></i></span>Agriculture Technologique</span>
+        <h2>Agriculture Technologique</h2>
+        <p>Découvrez comment la technologie révolutionne l'agriculture moderne. De la gestion intelligente des cultures à la digitalisation de la commercialisation, devenez acteur du changement dans le secteur agricole.</p>
+        <strong style="color:var(--navy); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em;">Futurs métiers</strong>
+        <ul class="outcomes-grid">
+          <li>Technicien agritech</li>
+          <li>Chef projet digitalisation et innovation</li>
+          <li>Consultant en innovation agricole</li>
+          <li>Spécialiste des chaînes de valeurs agricoles</li>
+        </ul>
+        <div class="formation-meta">
+          <span><i class="fa-regular fa-clock"></i> Durée : 3 mois</span>
+          <span><i class="fa-solid fa-moon"></i> Cours du soir</span>
+          <span><i class="fa-solid fa-wifi"></i> 100% en ligne</span>
+        </div>
+        <a href="contact.html?formation=Agriculture%20Technologique" class="btn btn-primary" style="margin-top:26px;">Je suis intéressé(e) <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article id="sante" class="formation-full reveal">
+      <div class="formation-full-media"><img src="../assets/images/santé.jpg" alt="E-Santé & Innovation Médicale"></div>
+      <div class="formation-full-body">
+        <span class="formation-full-tag c-sante"><span class="ico"><i class="fa-solid fa-heart-pulse"></i></span>E-Santé &amp; Innovation Médicale</span>
+        <h2>E-Santé &amp; Innovation Médicale</h2>
+        <p>Apprenez à intégrer les outils numériques dans la gestion des soins, la télémédecine et la sécurité des données médicales.</p>
+        <strong style="color:var(--navy); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em;">Futurs métiers</strong>
+        <ul class="outcomes-grid">
+          <li>Chargé de projet e-santé</li>
+          <li>Gestionnaire de données médicales</li>
+          <li>Consultant santé digitale</li>
+          <li>Technicien e-santé</li>
+        </ul>
+        <div class="formation-meta">
+          <span><i class="fa-regular fa-clock"></i> Durée : 3 mois</span>
+          <span><i class="fa-solid fa-moon"></i> Cours du soir</span>
+          <span><i class="fa-solid fa-wifi"></i> 100% en ligne</span>
+        </div>
+        <a href="contact.html?formation=E-Sant%C3%A9%20%26%20Innovation%20M%C3%A9dicale" class="btn btn-primary" style="margin-top:26px;">Je suis intéressé(e) <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+    <article id="transport" class="formation-full reveal">
+      <div class="formation-full-media"><img src="../assets/images/5g success.jpg" alt="E-Transport & Mobilité Intelligente"></div>
+      <div class="formation-full-body">
+        <span class="formation-full-tag c-transport"><span class="ico"><i class="fa-solid fa-truck-fast"></i></span>E-Transport &amp; Mobilité Intelligente</span>
+        <h2>E-Transport &amp; Mobilité Intelligente</h2>
+        <p>Formez-vous aux technologies de la mobilité : géolocalisation, billetterie numérique, gestion de flotte et analyse des données de transport.</p>
+        <strong style="color:var(--navy); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em;">Futurs métiers</strong>
+        <ul class="outcomes-grid">
+          <li>Responsable e-transport</li>
+          <li>Chef projet digitalisation et innovation</li>
+          <li>Technicien transport digital</li>
+          <li>Consultant e-transport</li>
+        </ul>
+        <div class="formation-meta">
+          <span><i class="fa-regular fa-clock"></i> Durée : 3 mois</span>
+          <span><i class="fa-solid fa-moon"></i> Cours du soir</span>
+          <span><i class="fa-solid fa-wifi"></i> 100% en ligne</span>
+        </div>
+        <a href="contact.html?formation=E-Transport%20%26%20Mobilit%C3%A9%20Intelligente" class="btn btn-primary" style="margin-top:26px;">Je suis intéressé(e) <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <h2>Une formation vous intéresse ?</h2>
+        <p>Contactez-nous directement, notre équipe vous répond rapidement sur WhatsApp.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-white">Nous contacter</a>
+        <a href="https://wa.me/2290162781863" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/images/logo.png" alt="SIF Academy" style="height:38px;width:auto;">
+        <p class="desc">SIF Academy est un centre de formation professionnelle en économie numérique, branche formation de SIF Groupe.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/sifgroupe" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/company/sifgroupe/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://wa.me/2290162781863" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Liens rapides</h4>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="avantages.html">Avantages</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Formations</h4>
+        <ul>
+          <li><a href="formations.html#finance">Finance &amp; Assurance digitale</a></li>
+          <li><a href="formations.html#agriculture">Agriculture Technologique</a></li>
+          <li><a href="formations.html#sante">E-Santé &amp; Innovation Médicale</a></li>
+          <li><a href="formations.html#transport">E-Transport &amp; Mobilité</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+22901627818163"><i class="fa-solid fa-phone"></i> +229 01 62 78 18 63</a></li>
+          <li><a href="tel:+22892418316"><i class="fa-solid fa-phone"></i> +228 92 41 83 16 (Togo)</a></li>
+          <li><a href="mailto:contact@sifgroupe.bj"><i class="fa-solid fa-envelope"></i> contact@sifgroupe.bj</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> Bénin, Cotonou | Togo, Lomé</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 SIF Academy — SIF Groupe. Tous droits réservés.</span>
+      <span>www.sifgroupe.bj</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/2290162781863" target="_blank" class="wa-float" aria-label="Contacter SIF Academy sur WhatsApp">
+  <i class="fa-brands fa-whatsapp fa-lg"></i>
+</a>
+
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
