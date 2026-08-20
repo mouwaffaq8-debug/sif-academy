@@ -2094,3 +2094,41 @@ ul {
     }
 
 }
+
+/* Assure que toutes les images s'adaptent à la largeur de leur conteneur */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Passe l'affichage en colonne sur écran mobile (ex: 768px et moins) */
+@media (max-width: 768px) {
+  /* Remplace '.card' ou '.formation-item' par la classe du conteneur parent */
+  .section-soft, 
+  .card, 
+  .grid-2 {
+    flex-direction: column !important;
+  }
+}
+
+/* Correctif Responsive Mobile */
+@media (max-width: 768px) {
+  /* Si ta carte utilise flexbox */
+  .card, 
+  [class*="card"], 
+  [class*="formation"] {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  /* Force l'image à prendre toute la largeur en haut */
+  .card img, 
+  [class*="card"] img, 
+  [class*="formation"] img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 220px !important;
+    object-fit: cover !important;
+  }
+}
+
